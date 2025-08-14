@@ -1,61 +1,256 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 💰 Gestor Financeiro Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Uma aplicação web moderna para controle financeiro pessoal, desenvolvida em Laravel com interface responsiva e banco SQLite local. Este projeto nasceu da necessidade de digitalizar e modernizar o controle financeiro tradicionalmente feito em planilhas Excel, oferecendo uma experiência mais intuitiva e visualmente atrativa.
 
-## About Laravel
+![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-3.x-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🎯 Sobre o Projeto
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Este sistema foi projetado para substituir planilhas Excel no controle financeiro pessoal, mantendo a simplicidade e familiaridade do método tradicional, mas adicionando recursos modernos como interface responsiva, validações automáticas, navegação intuitiva por períodos e visualizações gráficas dos dados financeiros.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+A filosofia por trás do projeto é simples: **manter a essência do controle financeiro em planilhas, mas com a praticidade e segurança de uma aplicação web moderna**. Isso significa que você encontrará os mesmos conceitos familiares (entradas, saídas, status de pagamento, organização mensal), mas apresentados de forma mais elegante e funcional.
 
-## Learning Laravel
+## ✨ Funcionalidades Principais
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Dashboard Interativo
+O coração da aplicação é um dashboard que oferece uma visão panorâmica das suas finanças mensais. Aqui você encontra cards visuais mostrando total de entradas, saídas e saldo atual, além de estatísticas detalhadas como percentual de contas quitadas e lista das últimas movimentações. O dashboard é automaticamente atualizado conforme você adiciona novas transações.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Gestão de Transações
+O sistema permite o cadastro completo de movimentações financeiras divididas em duas categorias principais: entradas (receitas como salários, freelances, vendas) e saídas (despesas como aluguel, cartões, compras). Cada transação pode ter seu status controlado entre "PAGO" e "PENDENTE", facilitando o acompanhamento de contas a pagar.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Navegação Temporal
+Uma funcionalidade essencial é a capacidade de navegar entre diferentes meses e anos, permitindo tanto o acompanhamento histórico quanto o planejamento futuro. O sistema organiza automaticamente todas as transações por período, mantendo um histórico completo acessível.
 
-## Laravel Sponsors
+### Interface Responsiva
+A aplicação funciona perfeitamente em dispositivos desktop, tablets e smartphones, adaptando-se automaticamente ao tamanho da tela. Isso significa que você pode controlar suas finanças em qualquer lugar, a qualquer momento.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Tecnologias Utilizadas
 
-### Premium Partners
+### Backend - Laravel Framework
+O Laravel foi escolhido como framework principal por sua robustez, segurança e facilidade de desenvolvimento. Ele fornece uma base sólida com recursos como ORM Eloquent para manipulação de dados, sistema de rotas RESTful, validações automáticas e proteção contra ataques comuns como CSRF.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Banco de Dados - SQLite
+Para máxima portabilidade e simplicidade, optamos pelo SQLite como banco de dados. Isso significa que todos os seus dados ficam armazenados em um único arquivo local, sem necessidade de configurar servidores de banco de dados externos. É perfeito para uso pessoal e garante total privacidade dos dados.
 
-## Contributing
+### Frontend - Bootstrap & CSS Customizado
+A interface utiliza Bootstrap 5.3 como base, garantindo responsividade e componentes modernos. Sobre esta base, aplicamos uma camada de CSS personalizado que implementa uma paleta de cores específica e animações suaves, criando uma experiência visual única e profissional.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Recursos Adicionais
+O projeto incorpora Font Awesome para ícones, Google Fonts para tipografia moderna, e JavaScript vanilla para interatividade, mantendo a performance alta sem dependências desnecessárias.
 
-## Code of Conduct
+## 🎨 Design e Experiência do Usuário
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Paleta de Cores Estratégica
+A paleta de cores foi cuidadosamente escolhida para criar associações visuais intuitivas: laranja para entradas (transmitindo prosperidade), amarelo para destaques (chamando atenção), verde-azulado para saldo (neutralidade e confiança), e tons escuros para textos importantes (legibilidade e seriedade).
 
-## Security Vulnerabilities
+### Navegação Intuitiva
+A navegação foi projetada para ser autoexplicativa, com ícones claros, textos descritivos e fluxos lógicos. Um usuário que nunca viu a aplicação consegue rapidamente entender como adicionar transações, navegar entre meses e visualizar relatórios.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Feedback Visual
+Todas as ações importantes fornecem feedback visual imediato através de notificações coloridas, animações suaves e mudanças de estado dos elementos. Isso cria uma sensação de responsividade e confiança no sistema.
 
-## License
+## 📋 Pré-requisitos
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Para executar esta aplicação em seu ambiente, você precisará ter instalado:
+
+**PHP versão 8.1 ou superior** - O Laravel 10 requer esta versão mínima do PHP para funcionar corretamente. O PHP precisa ter as extensões padrão habilitadas, incluindo SQLite, OpenSSL, PDO, Mbstring, Tokenizer, XML e Ctype.
+
+**Composer** - O gerenciador de dependências do PHP, necessário para instalar o Laravel e suas bibliotecas. Pode ser baixado gratuitamente do site oficial do Composer.
+
+**Servidor Web** (opcional) - Para desenvolvimento, o comando `php artisan serve` do Laravel é suficiente. Para produção, você pode usar Apache, Nginx ou qualquer servidor web compatível com PHP.
+
+## 🛠️ Instalação Completa
+
+### Passo 1: Configuração Inicial
+Comece criando um novo projeto Laravel através do Composer. Este processo baixa o framework e todas as dependências necessárias, criando a estrutura básica do projeto.
+
+```bash
+composer create-project laravel/laravel gestor-financeiro
+cd gestor-financeiro
+```
+
+### Passo 2: Configuração do Banco de Dados
+Configure o SQLite como banco de dados criando o arquivo necessário e ajustando as variáveis de ambiente.
+
+```bash
+# Criar arquivo do banco SQLite
+touch database/database.sqlite
+
+# Editar .env para configurar SQLite
+DB_CONNECTION=sqlite
+DB_DATABASE=database/database.sqlite
+```
+
+### Passo 3: Implementação dos Componentes
+Agora você precisa implementar os componentes específicos da aplicação financeira. Isto inclui:
+
+**Migration para a tabela de transações** - Define a estrutura do banco de dados com campos para descrição, valor, tipo (entrada/saída), status (pago/pendente), mês e ano.
+
+**Model Transaction** - Classe que representa as transações no código, incluindo relacionamentos, validações e métodos auxiliares para cálculos financeiros.
+
+**Controller TransactionController** - Controlador que gerencia todas as operações CRUD (criar, ler, atualizar, deletar) das transações, além de gerar dados para dashboard e relatórios.
+
+**Views Blade** - Templates para as páginas web, incluindo layout principal, dashboard e página de gerenciamento de transações.
+
+**Rotas Web** - Definições de URLs que conectam as requisições HTTP aos métodos do controlador.
+
+**Seeders** - Scripts para popular o banco com dados iniciais baseados em planilhas existentes.
+
+### Passo 4: Execução e Primeira Utilização
+Finalize a instalação executando as migrações e populando o banco com dados iniciais.
+
+```bash
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+php artisan serve
+```
+
+Após estes comandos, a aplicação estará disponível em `http://localhost:8000` com dados de exemplo já carregados.
+
+## 📊 Estrutura de Dados
+
+### Tabela de Transações
+A tabela principal armazena todas as movimentações financeiras com a seguinte estrutura:
+
+**id** - Identificador único da transação  
+**description** - Descrição da movimentação (ex: "Aluguel", "Freelance Web")  
+**amount** - Valor monetário com precisão de duas casas decimais  
+**type** - Tipo da movimentação ("ENTRADA" ou "SAIDA")  
+**status** - Status do pagamento ("PAGO" ou "PENDENTE")  
+**month** - Mês da movimentação (formato "01" a "12")  
+**year** - Ano da movimentação (formato "YYYY")  
+**created_at** e **updated_at** - Timestamps de criação e atualização
+
+Esta estrutura permite consultas eficientes por período, tipo de transação e status, além de manter um histórico completo de quando cada registro foi criado ou modificado.
+
+## 🎯 Como Usar
+
+### Navegação Básica
+Ao acessar a aplicação, você chegará ao dashboard principal. No topo de todas as páginas, encontrará um seletor de mês e ano que permite navegar entre diferentes períodos. Esta navegação é o ponto central da aplicação, pois todos os dados são organizados temporalmente.
+
+### Adicionando Transações
+Na página "Movimentações", você encontrará dois formulários lado a lado: um para entradas (receitas) e outro para saídas (despesas). Para entradas, você precisa apenas informar descrição e valor, pois são automaticamente marcadas como "PAGO". Para saídas, você também escolhe o status inicial entre "PAGO" ou "PENDENTE".
+
+### Gerenciando Status
+As saídas podem ter seu status alternado entre "PAGO" e "PENDENTE" a qualquer momento através do botão de alternância nas listas de transações. Isso é útil para acompanhar quais contas ainda precisam ser pagas no mês.
+
+### Visualizando Relatórios
+O dashboard oferece uma visão consolidada com totais, percentuais e listas das movimentações mais recentes. Cards coloridos facilitam a identificação rápida de entradas (laranja), saídas (vermelho) e saldo (verde-azulado).
+
+## 🔧 Comandos Úteis para Desenvolvimento
+
+Durante o desenvolvimento ou manutenção da aplicação, alguns comandos Laravel são particularmente úteis:
+
+```bash
+# Limpar caches durante desenvolvimento
+php artisan cache:clear
+php artisan config:clear
+php artisan view:clear
+
+# Recriar banco do zero (ATENÇÃO: apaga todos os dados)
+php artisan migrate:fresh --seed
+
+# Visualizar todas as rotas disponíveis
+php artisan route:list
+
+# Executar apenas seeders específicos
+php artisan db:seed --class=TransactionSeeder
+
+# Abrir terminal interativo para testes
+php artisan tinker
+```
+
+## 📁 Estrutura do Projeto
+
+### Diretórios Principais
+**app/Models/** - Contém o model Transaction com toda lógica de negócio  
+**app/Http/Controllers/** - Controladores que gerenciam requisições HTTP  
+**database/migrations/** - Scripts de criação e modificação do banco  
+**database/seeders/** - Scripts para popular banco com dados iniciais  
+**resources/views/** - Templates Blade para as páginas web  
+**routes/web.php** - Definições de rotas da aplicação  
+**public/** - Arquivos públicos acessíveis via web  
+
+### Arquivos de Configuração
+**.env** - Variáveis de ambiente e configurações locais  
+**config/database.php** - Configurações de conexão com banco  
+**composer.json** - Dependências PHP do projeto  
+
+## 🛡️ Segurança e Boas Práticas
+
+### Proteção CSRF
+Todas as operações de modificação de dados utilizam tokens CSRF do Laravel, protegendo contra ataques de requisição forjada entre sites.
+
+### Validação de Dados
+Tanto no frontend (HTML5) quanto no backend (Laravel), os dados são validados antes de serem processados, garantindo integridade e consistência.
+
+### Sanitização de Entrada
+Todas as entradas do usuário passam por processos de sanitização automática do Laravel, prevenindo ataques de injeção de código.
+
+### Banco Local
+O uso do SQLite mantém todos os dados localmente, eliminando riscos de exposição em servidores externos e garantindo total privacidade.
+
+## 🔄 Backup e Recuperação
+
+### Estratégia de Backup
+Como todos os dados ficam no arquivo `database/database.sqlite`, o backup é simples: basta copiar este arquivo para um local seguro regularmente.
+
+```bash
+# Criar backup com timestamp
+cp database/database.sqlite backups/backup_$(date +%Y%m%d_%H%M%S).sqlite
+
+# Restaurar backup
+cp backups/backup_20250814_143022.sqlite database/database.sqlite
+```
+
+### Exportação de Dados
+O SQLite permite exportação fácil para diversos formatos através de ferramentas como DB Browser for SQLite ou comandos SQL diretos.
+
+## 📈 Expansões Futuras
+
+### Funcionalidades Planejadas
+O sistema foi arquitetado para permitir expansões futuras sem grandes modificações na base existente. Algumas melhorias planejadas incluem:
+
+**Sistema de Categorias** - Organização mais detalhada de receitas e despesas por categorias customizáveis, permitindo análises mais granulares dos hábitos financeiros.
+
+**Gráficos e Relatórios Avançados** - Implementação de charts interativos mostrando evolução temporal, distribuição por categorias e comparações entre períodos.
+
+**Notificações e Lembretes** - Sistema para lembrar de contas a vencer, metas financeiras e análises periódicas.
+
+**Exportação Avançada** - Geração de relatórios em PDF, Excel e outros formatos para compartilhamento ou arquivo.
+
+**Aplicativo Mobile (PWA)** - Transformação em Progressive Web App para instalação em dispositivos móveis com funcionalidade offline.
+
+### Integrações Possíveis
+**APIs Bancárias** - Importação automática de extratos bancários via Open Banking  
+**Sincronização em Nuvem** - Backup automático em serviços como Google Drive ou Dropbox  
+**Calculadora de Impostos** - Módulo para cálculo de impostos baseado nas movimentações  
+
+## 🤝 Contribuição e Suporte
+
+### Estrutura para Contribuições
+O projeto segue padrões do Laravel e PSR-4, facilitando contribuições da comunidade. O código é bem documentado e organizado seguindo princípios SOLID.
+
+### Relatório de Bugs
+Para reportar problemas, inclua informações sobre versão do PHP, sistema operacional, passos para reproduzir o erro e logs relevantes da aplicação.
+
+### Sugestões de Melhorias
+Sugestões são bem-vindas, especialmente aquelas que mantêm a simplicidade e foco no controle financeiro pessoal sem complexidade desnecessária.
+
+## 📄 Licença
+
+Este projeto está sob licença MIT, permitindo uso, modificação e distribuição livre, tanto para projetos pessoais quanto comerciais.
+
+## 🙏 Agradecimentos
+
+Agradecimentos especiais à comunidade Laravel pela excelente documentação e frameworks, à equipe Bootstrap pela interface base responsiva, e a todos os desenvolvedores que contribuem para o ecossistema PHP/Laravel.
+
+---
+
+**Desenvolvido com ❤️ para simplificar o controle financeiro pessoal**
+
+*Transformando planilhas em experiências web modernas e intuitivas*
